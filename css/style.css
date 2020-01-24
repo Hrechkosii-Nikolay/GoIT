@@ -1,0 +1,95 @@
+body {
+	font-family: Cambria, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #3F4B53;
+}
+
+header{
+	padding-bottom: 20px;
+	margin-left: 25%;
+
+}
+.container {
+	width: 1080px;
+	margin: 0 auto;
+
+} 
+nav {
+	margin-top: 50px;
+}
+
+.menu{
+	padding: 0;
+	margin: 0;
+	display: block;
+	
+
+}
+
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 120px;
+
+	
+}
+.menu a{
+	color: #222;
+	text-decoration: none;
+	font-size: 16px;
+	text-transform: uppercase;
+	
+	
+}
+a:hover {
+color: #33CCCC;
+}
+
+a:active {
+color: #222;
+}
+.coment {
+text-transform: uppercase;
+color: #ccc;
+float: left;
+margin-bottom: 10px;
+font-size: 14px;
+}
+.title{
+width: 420px;
+float: left;
+text-align: left;
+margin-left: 60px;
+margin-top: 55px;
+}
+.clearfix:after {
+content: '';
+display: table;
+width: 100%;
+clear: both;
+}
+
+.services p{
+	text-align: justify;
+	margin-top: 30px;
+}
+.services h2{
+	margin-top: 70px;
+	font-weight: normal;
+	
+}
+.button {
+	border: 1px solid #3F4B53;
+	border-radius: 1px;
+	display: block;
+	width: 160px;
+	padding: 20px 0;
+	margin-left: 42%;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 85px;
+	margin-bottom: 20px;
+	color: #3F4B53;
+}
