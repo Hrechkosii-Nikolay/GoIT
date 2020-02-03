@@ -1,22 +1,20 @@
 body {
-	font-family: Cambria, sans-serif;
 	padding: 0;
 	margin: 0;
-	color: #3F4B53;
+	color: #626262;
 }
 
 header{
-	padding-bottom: 20px;
-	margin-left: 25%;
 
 }
 .container {
-	width: 1080px;
+	width: 902px;
 	margin: 0 auto;
 
 } 
 nav {
-	margin-top: 50px;
+	margin-top: 75px;
+	padding-left: 150px;
 }
 
 .menu{
@@ -30,52 +28,53 @@ nav {
 .menu li {
 	float: left;
 	display: block;
-	margin-right: 120px;
+	margin-right: 100px;
+	
 
 	
 }
 .menu a{
-	color: #222;
+	color: #626262;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: uppercase;
 	
 	
 }
 a:hover {
-color: #33CCCC;
+color: #03a9f4;
 }
 
 a:active {
-color: #222;
+color: #626262;
 }
 .coment {
 text-transform: uppercase;
-color: #ccc;
+color: #beb8ab;
 float: left;
-margin-bottom: 10px;
 font-size: 14px;
 }
 .title{
-width: 420px;
-float: left;
+width: 421px;
+float: left; */
 text-align: left;
-margin-left: 60px;
-margin-top: 55px;
-}
-.clearfix:after {
-content: '';
-display: table;
-width: 100%;
-clear: both;
+margin-left: px;
+margin-top: 130px;
 }
 
+.clearfix:after {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+	}
+	
 .services p{
-	text-align: justify;
 	margin-top: 30px;
 }
+
 .services h2{
-	margin-top: 70px;
+	margin-top: 75px;
 	font-weight: normal;
 	
 }
@@ -83,13 +82,17 @@ clear: both;
 	border: 1px solid #3F4B53;
 	border-radius: 1px;
 	display: block;
-	width: 160px;
-	padding: 20px 0;
-	margin-left: 42%;
+	width: 120px;
+	padding: 20px 30px;
+	margin: 0 auto;
 	text-decoration: none;
 	text-align: center;
 	font-size: 20px;
-	margin-top: 85px;
-	margin-bottom: 20px;
+	margin-top: 55px;
+	margin-bottom: 70px;
 	color: #3F4B53;
+}
+.position{
+	padding-left: 60px;
+	
 }
