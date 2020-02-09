@@ -154,6 +154,7 @@ h2::after {
   float: left;
   text-transform: uppercase;
   display: inline-block;
+  color: #fff;
 }
 
 .priсe {
