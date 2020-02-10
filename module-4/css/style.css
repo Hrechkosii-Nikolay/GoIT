@@ -154,7 +154,11 @@ h2::after {
   float: left;
   text-transform: uppercase;
   display: inline-block;
+ }
+
+.goods-name a{
   color: #fff;
+  text-decoration: none;
 }
 
 .priсe {
