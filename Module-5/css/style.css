@@ -1,3 +1,7 @@
+/* *, *::after, *::before{
+  outline: 1px solid red;
+}  */
+
 body {
   padding: 0;
   margin: 0;
@@ -5,6 +9,7 @@ body {
   color: #555252;
 }
   
+
 .clearfix:after {
   content: "";
   display: table;
@@ -24,6 +29,7 @@ img {
 }
 
 /* -----MAIN MANU AND LOGO----------------------------- */
+
 
 nav {
   float: right;
@@ -86,12 +92,21 @@ nav {
   background: url(../img/bg-photo.png) no-repeat center /cover;
   height: 600px;
   display: block; 
-  /* margin-top: 30px; */
   position: relative;
-
-
-
+  margin-top: 30px;
 } 
+
+.darkened{
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 2, 0.52);
+  z-index: 2;
+}
 
 .headline{
 width: 770px;
@@ -100,41 +115,41 @@ top: 0; left: 0; bottom: 0; right: auto;
 text-align: left;
 }
 
-.headline:before{  
-  content: "";
-  background-image: url(../img/pointer1.png);
+.left {  
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 1000px;
-  /* z-index: 2; */
+  
 }
 
-.headline:after{
-  content: "";
-  background-image: url(../img/pointer2.png);
+.right{
   margin: auto;
   position: absolute;
   top: 0; left: 1000px; bottom: 0; right: 0;
-  /* z-index: 2; */
+ 
 }
 
-.headline:before,
-.headline:after {
-  display: block;
+.left,
+.right {
+  display: inline-block;
   height: 104px;
   width: 104px;
   background-color: #4f9c8a;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.5;
-}
-/* -----:HOVER--SLIDER----------------- */
-.headline:hover:before {
-  opacity: 1;
+  border: 1px solid #4f9c8a;
 }
 
-.headline:hover:after {
-  opacity: 1;
+.left:hover,
+.right:hover {
+  background-color: #4f9c8a;
+}
+
+.img{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
 
 h1 {
@@ -339,6 +354,7 @@ h4{
   text-transform: uppercase;
   text-align: center;
   line-height: 50px;
+  padding: 0;
   margin: auto;
   position: absolute;
   top: 63px; left: 0; bottom: 0; right: 0;
@@ -347,11 +363,8 @@ h4{
 .basket{
   position: relative;
   bottom: 2px;
+  ri
 }
-
-.button{
-  padding: 0;
- }
 
 button:hover {
   transition: all 0.2s;
