@@ -1,0 +1,263 @@
+body{
+    padding: 0;
+    margin: 0;    
+}
+
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* -----MAIN MANU AND LOGO--------- */
+
+  header{
+      font-family: 'Montserrat', sans-serif;
+      padding-top: 25px;
+      padding-bottom: 125px;
+}
+
+.header {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #95e1d3;
+}
+
+.menu a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #95e1d3;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 50px;   
+}
+
+.menu a:hover {
+  transition: 0.2s;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #f38181;
+  color: #f38181;
+}
+
+/* ------SERVICES -------------------- */
+
+.team_title,
+.amazing_services,
+h2 {
+  text-align: center;
+}
+
+.title_style{
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  line-height: 24px;
+ color: #333333
+}
+
+h2{
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #333333
+}
+
+h2::after {
+  content: "";
+  margin: 40px auto;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+}
+
+.services{
+  max-width: 382px;
+}
+
+.services_item{
+display: flex;
+padding: 60px 0;
+}
+
+.main_services_block{
+  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+
+   
+.services p{
+ font-family: "Roboto";
+ font-size: 14px;
+ line-height: 25px;
+ color: #333333;
+ max-width: 292px;
+}
+
+
+h3{
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 14px;
+  color: #333333;
+  padding: 0;
+  margin: 0; 
+}
+
+.main_icon{
+  padding-right: 25px;
+}
+
+/* --------OUR TEAM--------------- */
+
+.text{
+  width: 980px;
+  margin: 0 auto;  
+  padding-bottom: 85px;
+}
+
+.team_block{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+h4{
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 14px;
+  color: #333333;
+  text-align: center;
+}
+
+.post{
+    font-family: "Roboto";
+    font-size: 15px;
+    font-style: italic;
+    line-height: 5px;
+    color: #333333;
+    opacity: .5;
+    text-align: center;
+}
+/* ----ANIMATION--------------- */
+
+.team{
+  position: relative;
+  height: 470px;
+  width: 380px;
+  background-color: #95e1d3;
+}
+
+.img_team{
+  position: relative;
+
+}
+
+.wrapper:hover {
+  transform: translate(-10px, -10px);
+  -webkit-transition: 0.5s ease-out;
+}
+
+.wrapper:hover .gradient {
+ opacity: .8;
+}
+
+.wrapper:hover .buttons {
+  opacity: 1;
+ }
+
+.gradient{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 470px;
+  width: 380px;
+  background-image: linear-gradient(#f38181, #fce38a);
+  opacity: 0;
+}
+
+button{
+  height: 55px;
+  width: 55px;
+  background-color: #fce38a;
+  border: none;
+}
+
+.buttons{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+button:hover{
+  background-color: #95e1d3;
+  transition: 0.3s
+} 
+
+/* ---FOOTER------------------------ */
+.footer_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  padding: 10px  0;
+}
+input{
+  border: 1px solid #e7e7e7;
+}
+
+.inputs{
+  display: flex;
+  height: 40px;
+}
+
+.information{
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.information a{
+  text-decoration: none;
+  color: #f38181;
+}
+
+input[type="submit"] {
+  height: 40px;
+  width: 144px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #95e1d3;
+  cursor: pointer;
+}
+
+input[type="email"]::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 24px;
+  color: #cccccc;
+  padding: 10px;
+}
