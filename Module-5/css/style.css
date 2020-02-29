@@ -4,6 +4,7 @@ body {
   font-family: OpenSans, sans-serif;
   color: #555252;
 }
+  
 
 .clearfix:after {
   content: "";
@@ -358,13 +359,12 @@ h4{
 .basket{
   position: relative;
   bottom: 2px;
-  ri
 }
 
 button:hover {
   transition: all 0.2s;
   opacity: 0.9;
-  background-color: #737373;
+  background-color: #1abc9c;
 }
 /* -----------------FOOTER --------------- */
 
@@ -374,11 +374,15 @@ button:hover {
   text-align: center;
 }
 
-.foot p{
+.footer p{
   font-family: OpenSans, sans-serif;
   font-size: 16px;
   line-height: 28px;
   color: #f0f0f0;
   display: inline-block;
   padding-top: 20px;
+}
+.footer a{
+  text-decoration: none;
+  color: #1abc9c;
 }
