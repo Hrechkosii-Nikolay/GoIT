@@ -24,6 +24,10 @@ img{
     margin: 0 auto;
 }
 
+button:active, 
+button:focus {
+    outline: none !important;
+}
 
 /* ----HEADER--------- */
 
