@@ -1,0 +1,392 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: OpenSans, sans-serif;
+  color: #555252;
+}
+  
+
+.clearfix {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+/* -----MAIN MANU AND LOGO----------------------------- */
+
+
+nav {
+  float: right;
+}
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  float: left;
+  margin-top: 43px;
+  text-decoration: none;
+  color: #555252;
+  font-weight: 300;
+}
+
+.logo:first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.menu {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+   margin-top: 43px;
+}
+
+.menu li {
+  float: left;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.menu li:first-child {
+  margin-left: 0px;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu a:hover,
+.menu a:focus {
+  color: #1abc9c;
+  transition: all 0.2s;
+  opacity: 0.9;
+}
+
+/* ---------------- BACKGROUND IMG   ------------ */
+
+.background-img{
+  background: url(../img/bg-photo.png) no-repeat center /cover;
+  height: 600px;
+  display: block; 
+  position: relative;
+  margin-top: 30px;
+  
+}
+
+.background-img::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 2, 0.4);
+}
+
+.headline{
+width: 764px;
+position: absolute;
+display: inline-block;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+  .left {  
+    margin: auto;
+    position: absolute;
+    top: 100px; left: -940px; bottom: 0; right: 0px;
+  }
+  
+  .right{
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 800px; bottom: 0; right: 0;
+  }
+  
+  .left,
+  .right {
+    display: inline-block;
+    height: 104px;
+    width: 104px;
+    background-color: #4f9c8a;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    border: 1px solid #4f9c8a;
+    border-radius: 5px;
+  }
+  
+  .left:hover,
+  .right:hover {
+    background-color: #1abc9c;
+    opacity: .8;
+  }
+
+.img{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  word-wrap: normal;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.tours{
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* --- New collection --------------------------- */
+
+.background{
+  background-color: #e9f0fd;
+  padding-bottom: 100px;
+  padding-top: 120px;
+}
+.h2{
+  position: relative; 
+}
+
+h2 {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  top: 100px;
+  left: 50%;
+  margin: 0px;
+  margin-bottom: 130px;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+
+h2::after {
+  content: "";
+  margin: 20px auto;
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+}
+
+.goods li {
+  list-style: none;
+  display: inline-block;
+}
+
+.goods {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.goods-block {
+  width: 255px;
+  padding: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-top: 335px;
+
+  position: relative;
+}
+
+.goods-block:hover .goods-name {
+  background-color: #1abc9c;
+  transition: all 0.2s;
+}
+
+.goods-block:hover .priсe {
+  background-color: #1abc9c;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.goods-block:nth-child(4n) {
+  margin-right: 0;
+}
+
+.name-price {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  color: #fff;
+}
+
+.goods-name {
+  font-size: 18px;
+  background-color: #323232;
+  padding: 14px;
+  width: 167px;
+  float: left;
+  text-transform: uppercase;
+  display: inline-block;
+  box-sizing: content-box;
+}
+
+h4{
+  padding: 0;
+  margin: 0;
+}
+
+.goods-name a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.priсe {
+  font-size: 18px;
+  padding: 14px;
+  background-color: #8c8c8c;
+  display: inline-block;
+}
+
+/*--------------- ICON -------------------- */
+.bg-color{
+  position: absolute;
+  height: 300px;
+  width: 233px;
+  background-color: rgba(0, 0, 0,.5);
+  margin: 11px;
+  opacity: 0;
+}
+
+.goods-block:hover .bg-color {
+  opacity: 1;
+}
+
+.icon01{
+  background-image: url(../img/icon1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid white;
+  height: 50px;
+  width: 50px;
+}
+
+.icon02{
+  background-image: url(../img/icon2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid white;
+  height: 50px;
+  width: 50px;
+}
+
+.icon03{
+  background-image: url(../img/icon3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid white;
+  height: 50px;
+  width: 50px;
+}
+
+.icon {
+background-color: transparent;
+display: inline-block;
+border: 1px solid white;
+height: 50px;
+width: 50px;
+margin-left: 7px;
+margin-top: 95px;
+position: relative;
+left: 28px;
+}
+
+.icon:hover  {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+  transition: all 0.2s;
+}
+
+ .btn:first-child,
+ .btn:last-child{
+   margin-left: 0px;
+ }
+/* -----------BASKET BUTTON------------------ */
+
+ .bnt_card{
+  border: 1px solid #fff;
+  display: inline-flex;
+  width: 164px;
+  height: 50px;
+  background-color: #323232;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  padding: 0;
+  margin: auto;
+  position: absolute;
+  top: 65px; left: 0; bottom: 0; right: 0;
+}
+
+.basket{
+  position: relative;
+  bottom: 2px;
+  padding: 12px 12px;
+}
+
+.bnt_card:hover {
+  transition: all 0.2s;
+  opacity: 0.9;
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+}
+
+button{
+  outline: none;
+}
+/* -----------------FOOTER --------------- */
+
+ footer{
+  background-color: #323232;
+  height: 88px;
+  text-align: center;
+}
+
+.footer p{
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #f0f0f0;
+  display: inline-block;
+  padding-top: 20px;
+}
+.footer a{
+  text-decoration: none;
+  color: #1abc9c;
+}
