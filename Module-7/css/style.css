@@ -272,15 +272,19 @@ footer h2{
   .input{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
   }
   textarea{
     width: 450px;
     height: 210px;
     border: 2px solid #222;
     border-radius: 5px;
+    outline: none; 
   }
 
+  input{
+    outline: none; 
+  }
   .input_block{
     display: flex;
     justify-content: space-between;
@@ -306,7 +310,6 @@ footer h2{
     resize: none;
   }
   textarea:focus{
-   
     background-color: #FFE773;
     text-transform: uppercase;
   }
@@ -328,7 +331,14 @@ footer h2{
     font-family: 'Montserrat';
     font-weight: bold;
     text-transform: uppercase;
-    color: #fff; 
+    color: #fff;
+    outline: none; 
+  }
+
+  input[type="submit"]:hover {
+    background-color: #f3dd8e;
+    
+    
   }
 
 
