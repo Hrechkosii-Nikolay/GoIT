@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module-10</title>
+    <title>Module-6</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -13,7 +13,13 @@
 <body>
     <!-- MAIN MANU AND LOGO -->
     <header class="header">
+      <!-- <img class="header__bg-img" srcset="img/main-baner.png 1920w, img/main-baner@2x.png 3840w" sizes="1920" src="img/main-baner.png" alt=""> -->
+      <picture class="header__bg-img">
+        <source tupe="imade/webp" srcset="img/main-baner.webp 1x, img/main-baner@2x.webp 2x" sizes="1920" height="1000">
+        <img src="img/main-baner.png" srcset="img/main-baner@2x.png 2x" alt="">
+      </picture>
         <div class="container">
+
           <div class="header__inner">
             <div class="logo"><a class="logo__link" href="#">MoGo</a></div>
             <nav class="menu">
