@@ -12,24 +12,28 @@ margin: 0 auto;
 
   /* ---- MAIN MANU AND LOGO --------- */
 
-
-/* .header{
+.header{
   background: url(../img/main-baner.png) no-repeat center top / cover;
-  height: 100%;
+  width: 100%;
   position: relative;
   z-index: 1;
-} */
+}
 
-.header__bg-img{
-  position: absolute;
+@media (-webkit-min-device-pixel-ratio: 2), 
+(-o-min-device-pixel-ratio: 2/1), 
+(min-resolution: 192dpi) {
+  .header {
+    background: url(../img/main-baner@2x.png);  
+    background-size: cover;
   }
+}
 
-.header__bg-img::before{
+.header::before{
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 4px;
+  bottom: 0;
   right: 0;
   z-index: 3;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f38181), to(#fce38a));
@@ -191,9 +195,7 @@ width: 60px;
 height: 3px;
 background-color: #f38181;
 }
-.services{
-  padding-top: 150px;
-}
+
 .services__item{
 min-width: 382px;
 }
