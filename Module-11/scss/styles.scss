@@ -1,0 +1,387 @@
+@import 'variables/mixins.scss';
+@import 'variables/colors';
+@import 'variables/fonts';
+
+
+body{
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+    font-family: $main-font-family;  
+    }
+    
+    .container {
+    width: 1200px;
+    margin: 0 auto;
+    }
+    
+      /* ---- MAIN MANU AND LOGO --------- */
+    
+    .header{
+      background: url(../img/main-baner.png) no-repeat center top / cover;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+         
+      @media (min-resolution: 192dpi) {
+      .header {
+        background: url(../img/main-baner@2x.png);  
+        background-size: cover;
+      }
+    }
+        &::before{
+      content: '';
+      @include absolute-0
+      z-index: 3;
+      background-image: linear-gradient(#f38181, #fce38a);
+      opacity: .8;
+    }
+}
+       
+    .header__inner{
+      @include center-flex ('ver + s-b');
+      position: relative;
+      z-index: 3;
+      padding-top: 30px;
+      }
+    
+    
+    .logo__link{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    color: $header-color;
+    }
+    
+    .menu__link{
+    font-size: 14px;
+    font-weight: 500;
+    color: $header-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 50px;   
+
+        &:hover {
+            transition: 0.2s;
+            padding-bottom: 5px;
+            border-bottom: 3px solid $header-acсent;
+            color: $header-acсent;
+            }
+    }
+    
+    .menu a:first-child{
+    margin-left: 0;
+    }
+    
+    .header__icon{
+      margin-left: 30px;
+      vertical-align: middle;
+      display: inline-block;
+      fill: $header-color; 
+      width: 20px;
+      height: 20px;
+
+      &:hover{
+        fill: $header-acсent;  
+        transform: scale(1.05);
+        }
+    }
+    
+    
+
+      
+      .header__title{
+      font-size: 150px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $header-color;
+      line-height: 150px;
+      text-align: center;
+      position: relative;
+      z-index: 3;
+      display: block;
+      }
+      
+      .header__span{
+        display: block;
+        font-size: 72px;
+        line-height: 87px;
+        color: $header-color;
+        text-transform: capitalize;
+        padding-bottom: 20px;
+      }
+      
+      .header__btn{
+      width: 155px;
+      height: 34px;
+      border: 3px solid $header-color;
+      display: inline-block;
+      z-index: 3;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $header-color;
+      text-align: center;
+      outline: none;
+      background-color: transparent;
+      margin-bottom: 150px;
+      text-align: center;
+      @include revative-center;
+        
+            &:hover{
+        color: $bnt-hover;
+        border: 3px solid $bnt-hover;
+        background-color: transparent;
+      }
+}
+      
+    
+    
+    
+    /* ------SERVICES -------------------- */
+    
+    .title{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: $title-color;
+    line-height: 36px;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    z-index: 3;
+        &::after {
+            content: "";
+            margin: 20px auto;
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: $bnt-hover;
+            }
+        &:first-letter{
+            text-transform: none;
+            }
+    }
+    
+    span{
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    line-height: 0px;
+    color: $title-color;
+    text-transform: lowercase;
+    font-weight: 400;
+    }
+    
+    .services__item{
+    min-width: 382px;
+    }
+    
+    .services__item{
+      display: flex;
+      padding: 40px 0;
+      }
+      
+      .services__items{
+      @include center-flex ('s-b');
+      flex-wrap: wrap;
+      }
+    
+       
+    .services__text{
+    font-family: $services-text;
+    font-size: 14px;
+    color: $main-text;
+    line-height: 25px;
+    max-width: 292px;
+    }
+    
+    
+    .services__title{
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 14px;
+    color: $title-color;
+    padding: 0;
+    margin: 0; 
+    }
+    
+    .main__icon{
+    padding-right: 25px;
+    height: 32px;
+    width: 32px;
+    fill: $main-icon;
+    
+    }
+    
+    /* --------OUR TEAM--------------- */
+    
+    .team__text{
+    font-family: $team-text;
+    font-size: 14px;
+    color: $main-text;
+    width: 980px;
+    margin: 0 auto;  
+    padding-bottom: 85px;
+    text-align: center;
+    }
+    
+    .team__block{
+      @include center-flex ('s-b');
+      margin-bottom: 80px;
+      }
+    
+    .team__name{
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 14px;
+    color: $title-color;
+    text-align: center;
+    }
+    
+    .team__post{
+    font-family: $team-post;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 5px;
+    color: $title-color;
+    opacity: .5;
+    text-align: center;
+    }
+    /* ----ANIMATION--------------- */
+    
+    .team__card{
+      position: relative;
+      height: 470px;
+      width: 380px;
+      background-color: $footer-btn;
+      }
+      
+    
+      
+      .team__card-wrapper {
+
+        &:hover {
+            transform: translate(-10px, -10px);
+            transition: 0.5s ease-out;
+            }
+        &:hover .team__img::before {
+            opacity: .8;
+            }
+        &:hover .team__buttons {
+                opacity: 1;
+                }
+      }
+   
+      
+  
+      
+      .team__img::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 3.8px;
+        right: 0;
+        z-index: 3;
+        background-image: linear-gradient(#f38181, #fce38a);
+        opacity: 0;
+      }
+      
+      .team__btn{
+      height: 55px;
+      width: 55px;
+      background-color: $team-btn;
+      border: none;
+      margin: .5px;
+
+              
+      &:hover{
+        background-color: $bnt-hover;
+        transition: 0.3s
+        } 
+        
+        &:hover .team__icon{
+          fill: $bg-icon-hover;
+        }
+      
+      }
+      
+      .team__buttons{
+       @include absolute-center;    
+      display: flex;
+      opacity: 0;
+      z-index: 4;
+      }
+
+      .team__icon{
+        width: 27px;
+        height: 27px;
+        fill: $team-icon;
+      }
+      
+      .team {
+        padding-bottom: 80px;
+      }
+    
+    
+    /* ---FOOTER------------------------ */
+    
+    .footer__wrapper{
+      @include center-flex ('s-b'); 
+      border-top: 1px solid $input-border;
+      padding: 10px  0;
+      }
+      
+      .footer__inputs{
+     display: flex;
+      }
+      
+      .footer__wrapper{
+      display: flex;
+      height: 40px;
+      }
+      
+      .footer__information{
+      font-size: 14px;
+      line-height: 17px;
+      color: $title-color;
+      }
+      
+      .footer__link{
+      text-decoration: none;
+      color: $footer-link;
+    }
+      
+      .footer__input-submit {
+      height: 40px;
+      width: 144px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      color: $footer-submit;
+      text-transform: uppercase;
+      background-color: $footer-submit-bg;
+      cursor: pointer;
+      border: none;
+      }
+      
+      .footer__input-email{
+        border: none;
+        height: 35px;
+        outline: none;
+        border: 1px solid $input-border;
+            &::placeholder {
+                font-family: $placeholder-email;
+                font-size: 15px;
+                font-style: italic;
+                line-height: 24px;
+                color: $input-placeholder;
+                padding: 10px;
+                }
+      }
+  
+   

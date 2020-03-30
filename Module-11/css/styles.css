@@ -1,0 +1,316 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+/* ---- MAIN MANU AND LOGO --------- */
+.header {
+  background: url(../img/main-baner.png) no-repeat center top/cover;
+  width: 100%;
+  position: relative;
+  z-index: 1; }
+  @media (min-resolution: 192dpi) {
+    .header .header {
+      background: url(../img/main-baner@2x.png);
+      background-size: cover; } }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background-image: linear-gradient(#f38181, #fce38a);
+    opacity: .8; }
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  padding-top: 30px; }
+
+.logo__link {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #fff; }
+
+.menu__link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 50px; }
+  .menu__link:hover {
+    transition: 0.2s;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fce38a;
+    color: #fce38a; }
+
+.menu a:first-child {
+  margin-left: 0; }
+
+.header__icon {
+  margin-left: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  fill: #fff;
+  width: 20px;
+  height: 20px; }
+  .header__icon:hover {
+    fill: #fce38a;
+    transform: scale(1.05); }
+
+.header__title {
+  font-size: 150px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 150px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  display: block; }
+
+.header__span {
+  display: block;
+  font-size: 72px;
+  line-height: 87px;
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 20px; }
+
+.header__btn {
+  width: 155px;
+  height: 34px;
+  border: 3px solid #fff;
+  display: inline-block;
+  z-index: 3;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  background-color: transparent;
+  margin-bottom: 150px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .header__btn:hover {
+    color: #f38181;
+    border: 3px solid #f38181;
+    background-color: transparent; }
+
+/* ------SERVICES -------------------- */
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #333;
+  line-height: 36px;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+  z-index: 3; }
+  .title::after {
+    content: "";
+    margin: 20px auto;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181; }
+  .title:first-letter {
+    text-transform: none; }
+
+span {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  line-height: 0px;
+  color: #333;
+  text-transform: lowercase;
+  font-weight: 400; }
+
+.services__item {
+  min-width: 382px; }
+
+.services__item {
+  display: flex;
+  padding: 40px 0; }
+
+.services__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.services__text {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #b6b6b6;
+  line-height: 25px;
+  max-width: 292px; }
+
+.services__title {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 14px;
+  color: #333;
+  padding: 0;
+  margin: 0; }
+
+.main__icon {
+  padding-right: 25px;
+  height: 32px;
+  width: 32px;
+  fill: #95e1d3; }
+
+/* --------OUR TEAM--------------- */
+.team__text {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #b6b6b6;
+  width: 980px;
+  margin: 0 auto;
+  padding-bottom: 85px;
+  text-align: center; }
+
+.team__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px; }
+
+.team__name {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 14px;
+  color: #333;
+  text-align: center; }
+
+.team__post {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: italic;
+  line-height: 5px;
+  color: #333;
+  opacity: .5;
+  text-align: center; }
+
+/* ----ANIMATION--------------- */
+.team__card {
+  position: relative;
+  height: 470px;
+  width: 380px;
+  background-color: #95e1d3; }
+
+.team__card-wrapper:hover {
+  transform: translate(-10px, -10px);
+  transition: 0.5s ease-out; }
+
+.team__card-wrapper:hover .team__img::before {
+  opacity: .8; }
+
+.team__card-wrapper:hover .team__buttons {
+  opacity: 1; }
+
+.team__img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 3.8px;
+  right: 0;
+  z-index: 3;
+  background-image: linear-gradient(#f38181, #fce38a);
+  opacity: 0; }
+
+.team__btn {
+  height: 55px;
+  width: 55px;
+  background-color: #fce38a;
+  border: none;
+  margin: .5px; }
+  .team__btn:hover {
+    background-color: #f38181;
+    transition: 0.3s; }
+  .team__btn:hover .team__icon {
+    fill: #fff; }
+
+.team__buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  opacity: 0;
+  z-index: 4; }
+
+.team__icon {
+  width: 27px;
+  height: 27px;
+  fill: #f38181; }
+
+.team {
+  padding-bottom: 80px; }
+
+/* ---FOOTER------------------------ */
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  padding: 10px  0; }
+
+.footer__inputs {
+  display: flex; }
+
+.footer__wrapper {
+  display: flex;
+  height: 40px; }
+
+.footer__information {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333; }
+
+.footer__link {
+  text-decoration: none;
+  color: #f38181; }
+
+.footer__input-submit {
+  height: 40px;
+  width: 144px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #95e1d3;
+  cursor: pointer;
+  border: none; }
+
+.footer__input-email {
+  border: none;
+  height: 35px;
+  outline: none;
+  border: 1px solid #e5e5e5; }
+  .footer__input-email::placeholder {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-style: italic;
+    line-height: 24px;
+    color: #ccc;
+    padding: 10px; }

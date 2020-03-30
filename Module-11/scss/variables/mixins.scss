@@ -1,0 +1,38 @@
+@mixin center-flex($type: 'all') {
+    display: flex;
+
+    @if $type== 'all'{
+        justify-content: center;
+        align-items: center;
+    } @else if $type== 'hor' {
+        justify-content: center;
+    } @else if $type== 'ver' {
+        align-items: center;
+    } @else if $type== 's-b' {
+        justify-content: space-between;
+    } @else if $type== 'ver + s-b' {
+        justify-content: space-between;
+        align-items: center;}
+}
+
+@mixin revative-center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+@mixin absolute-0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
